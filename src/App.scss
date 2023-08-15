@@ -1,13 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,*::after{box-sizing: border-box;}
+ul,ol,a{list-style: none; text-decoration: none; color: inherit;}
 body{
+  $bg:black;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: $bg;
 }
-/* src/App.css */
+
 .world-clock-alarm {
   font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
   margin-top: 2rem;
+  > h1{
+    color: #fff;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+  }
 }
 
 .clock {
